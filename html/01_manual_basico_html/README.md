@@ -66,7 +66,7 @@ A página segue a seguinte organização:
 
 ---
 
-## 📚 Referência & Autor 
+## 📚 Referências & Autor 
 
 Conteúdo baseado na documentação oficial disponível em:
 
