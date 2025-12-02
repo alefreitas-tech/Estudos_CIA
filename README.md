@@ -13,15 +13,15 @@ Sinta-se à vontade para explorar, acompanhar novas atualizações e entrar em c
 
 ## 🚀 O que você encontra aqui
 
-* Projetos de estudo
+* Projetos de estudo.
 
-* Testes de conceitos
+* Testes de conceitos.
 
-* Aplicações práticas
+* Aplicações práticas.
 
-* Treinamentos e experimentações
+* Treinamentos e experimentações.
 
-* Melhorias contínuas e aprendizado constante
+* Melhorias contínuas e aprendizado constante.
 
 
 ## 🧩 Objetivo deste Portfólio
