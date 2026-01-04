@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>WEB Brasil - Pesquisa</title>
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <iframe src="header.html" class="iframe-header" title="Cabeçalho"></iframe>
+
+  <!-- Estrutura principal -->
+  <div class="container">
+
+    <!-- Menu lateral -->
+    <aside class="menu">
+      <iframe src="menu.html" title="Menu"></iframe>
+    </aside>
+
+    <!-- Conteúdo principal -->
+
+    <main class="conteudo">
+
+      <article>
+
+        <header>
+          <h1>JavaScript: Interatividade na Web</h1>
+          <p>
+            O <strong>JavaScript</strong> é a linguagem de programação responsável por
+            tornar as páginas web dinâmicas e interativas. Com ele, é possível reagir
+            às ações do usuário, manipular elementos da página e comunicar-se com
+            servidores.
+          </p>
+        </header>
+
+        <!-- Bloco texto + imagem -->
+        <section class="artigo-html">
+
+          <div class="texto-artigo">
+            <p>
+              Diferente do HTML, que estrutura o conteúdo, e do CSS, que define o
+              visual, o JavaScript atua no <strong>comportamento</strong> da página.
+              Ele permite criar interações como cliques, animações, validações de
+              formulários e carregamento de dados sem recarregar a página.
+            </p>
+
+            <p>
+              O JavaScript é executado diretamente no navegador do usuário, sendo
+              suportado por todos os navegadores modernos. Isso o torna uma das
+              linguagens mais acessíveis e populares do mundo.
+            </p>
+
+            <p>
+              Atualmente, o JavaScript também é utilizado no lado do servidor,
+              através de ambientes como o <strong>Node.js</strong>, ampliando ainda
+              mais seu uso no desenvolvimento web moderno.
+            </p>
+          </div>
+
+          <figure class="imagem-artigo">
+            <img src="imagens/javascript-logo.png"
+                alt="Ilustração representando a logo do JavaScript"
+                width="350"
+                height="350">
+            <figcaption>Logotipo JavaScript</figcaption>
+          </figure>
+
+        </section>
+
+        <section>
+          <h2 id="aprender">Por que aprender JavaScript?</h2>
+          <p>
+            Aprender JavaScript é essencial para quem deseja criar aplicações web
+            completas. Ele é a ponte entre a interface visual e a lógica de
+            funcionamento do sistema.
+          </p>
+
+          <p>
+            Entre suas principais aplicações estão:
+          </p>
+
+          <ul>
+            <li>Manipulação dinâmica do DOM</li>
+            <li>Validação de formulários</li>
+            <li>Consumo de APIs REST</li>
+            <li>Criação de aplicações web interativas</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="java-moderna">JavaScript na Web Moderna</h2>
+          <p>
+            Frameworks e bibliotecas como React, Vue e Angular são baseados em
+            JavaScript e dominam o desenvolvimento de interfaces modernas.
+            Mesmo assim, compreender o JavaScript puro é fundamental para
+            entender o funcionamento dessas ferramentas.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="exemplo">Exemplo simples em JavaScript</h2>
+          <p>
+            Abaixo está um exemplo básico de JavaScript que exibe uma mensagem
+            quando o usuário clica em um botão:
+          </p>
+
+          <pre>
+    &lt;button onclick="mostrarMensagem()"&gt;Clique aqui&lt;/button&gt;
+
+    &lt;script&gt;
+      function mostrarMensagem() {
+        alert("Olá! Este é um exemplo simples em JavaScript.");
+      }
+    &lt;/script&gt;
+          </pre>
+        </section>
+
+      </article>
+
+    </main>
+
+
+    <!-- Âncoras do conteúdo -->
+    <section class="ancoras">
+      <h3>Neste artigo</h3>
+      <ul>
+        <li><a href="#aprender">A importancia</a></li>
+        <li><a href="#java-moderna">Web Moderna</a></li>
+        <li><a href="#exemplo">Exemplo Código</a></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- Rodapé -->
+  <iframe src="footer.html" class="iframe-footer" title="Rodapé"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formatação conteúdo principal*/
+h1{
+    color: #1f352f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: #0366d6;
+}
+h3{
+    color: rgb(21, 63, 8);
+}
+
+code{
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1px 10px 1px 10px ;
+  background-color: rgb(41, 41, 70);
+  color: #34c06a;
+}
+
+/* Iframes fixos */
+.iframe-header {
+  width: 100%;
+  height: 62px;
+  border: none;
+}
+
+.iframe-footer {
+  width: 100%;
+  height: 60px;
+  border: none;
+  background-color: #14201d;
+  
+}
+
+/* Layout principal */
+.container {
+  display: grid;
+  grid-template-columns: 220px 1fr 200px;
+  min-height: calc(100vh - 120px);
+  border: none;
+}
+
+/* Menu */
+.menu iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0px 30px 0px 0px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13);
+  
+}
+
+/* Conteúdo */
+.conteudo {
+  padding: 20px;
+}
+
+/* Âncoras */
+.ancoras {
+  padding: 20px;
+  border-left: 1px solid #e0e0e0;
+  background-color: #fafafa;
+}
+
+.ancoras ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ancoras li {
+  margin-bottom: 8px;
+}
+
+.ancoras a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.ancoras a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Artigo HTML ===== */
+
+.artigo-html {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 30px 0;
+}
+
+/* Texto */
+.texto-artigo {
+  flex: 1;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Imagem */
+.imagem-artigo {
+  flex-shrink: 0;
+  width: 150px;
+  text-align: center;
+}
+
+.imagem-artigo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Legenda */
+.imagem-artigo figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* Formatação para exemplo de códigos*/
+pre{
+            color: chartreuse;
+            background: rgb(49, 48, 48);
+            padding: 15px;
+            border-radius: 0px 30px 0px 0px;
+            border-left: chartreuse solid 15px;
+        }
+
+
+/* ===== Responsividade ===== */
+@media (max-width: 900px) {
+  .artigo-html {
+    flex-direction: column;
+  }
+
+  .imagem-artigo {
+    width: 100%;
+  }
+}

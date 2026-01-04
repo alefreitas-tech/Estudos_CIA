@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>WEB Brasil - Pesquisa</title>
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <iframe src="header.html" class="iframe-header" title="Cabeçalho"></iframe>
+
+  <!-- Estrutura principal -->
+  <div class="container">
+
+    <!-- Menu lateral -->
+    <aside class="menu">
+      <iframe src="menu.html" title="Menu"></iframe>
+    </aside>
+
+    <!-- Conteúdo principal -->
+
+    <main class="conteudo">
+
+      <article aria-labelledby="titulo-acessibilidade">
+
+        <header>
+          <h1 id="titulo-acessibilidade">
+            A Importância de um Site Estruturado para Acessibilidade
+          </h1>
+
+          <p>
+            A <strong>acessibilidade na web</strong> garante que todas as pessoas,
+            independentemente de limitações físicas, sensoriais ou cognitivas,
+            consigam acessar, compreender e navegar em um site.
+          </p>
+
+          <p>
+            Um site bem estruturado, utilizando corretamente o <strong>HTML semântico</strong>,
+            é a base para tornar o conteúdo acessível a leitores de tela e outras
+            tecnologias assistivas.
+          </p>
+        </header>
+
+        <!-- Bloco texto + imagem -->
+        <section class="artigo-html" aria-labelledby="acessibilidade-estrutura">
+
+          <div class="texto-artigo">
+            <h2 id="acessibilidade-estrutura">
+              Estrutura HTML e Leitores de Tela
+            </h2>
+
+            <p>
+              Leitores de tela interpretam o código HTML para transmitir informações
+              de forma auditiva ao usuário. Quando a estrutura do site é clara e
+              semântica, esses softwares conseguem identificar corretamente
+              títulos, seções, artigos e conteúdos principais.
+            </p>
+
+            <p>
+              O uso adequado de tags como <code>&lt;header&gt;</code>,
+              <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>,
+              <code>&lt;article&gt;</code> e <code>&lt;footer&gt;</code>
+              permite que o usuário navegue pelo site utilizando atalhos do leitor
+              de tela, melhorando significativamente a experiência.
+            </p>
+
+            <p>
+              Um código organizado também evita informações redundantes ou fora de
+              contexto, tornando a navegação mais rápida, objetiva e eficiente.
+            </p>
+          </div>
+
+          <figure class="imagem-artigo">
+            <img src="imagens/acessibilidade.jpg"
+                alt="Pessoa utilizando leitor de tela para navegar em um site bem estruturado">
+            <figcaption>
+              Estrutura semântica facilitando o uso de leitores de tela. *Imagem da internet
+            </figcaption>
+          </figure>
+
+        </section>
+
+        <section>
+          <h2 id="acessivel">Benefícios de um Site Acessível</h2>
+
+          <p>
+            Criar um site acessível não beneficia apenas pessoas com deficiência.
+            Ele melhora a experiência para todos os usuários e aumenta a qualidade
+            geral do projeto.
+          </p>
+
+          <ul>
+            <li>Facilidade de navegação com leitores de tela</li>
+            <li>Melhor compreensão do conteúdo</li>
+            <li>Maior alcance de público</li>
+            <li>Conformidade com boas práticas e legislações</li>
+            <li>Melhor indexação por mecanismos de busca</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="boas-praticas">Acessibilidade como Boas Práticas</h2>
+
+          <p>
+            Pensar em acessibilidade desde o início do desenvolvimento evita retrabalho
+            e torna o projeto mais inclusivo. Um HTML bem estruturado reduz a necessidade
+            de correções futuras e garante longevidade ao site.
+          </p>
+
+          <p>
+            Além disso, acessibilidade está diretamente ligada à ética profissional,
+            pois promove inclusão digital e igualdade de acesso à informação.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="conclusao">Conclusão</h2>
+
+          <p>
+            Um site estruturado com foco em acessibilidade não é apenas uma exigência
+            técnica, mas uma responsabilidade social. Utilizar HTML semântico e seguir
+            boas práticas garante que o conteúdo esteja disponível para todos.
+          </p>
+
+          <p>
+            Investir em acessibilidade é investir em qualidade, inclusão e no futuro
+            da web.
+          </p>
+        </section>
+
+      </article>
+
+    </main>
+
+
+    <!-- Âncoras do conteúdo -->
+    <section class="ancoras">
+      <h3>Neste artigo</h3>
+      <ul>
+        <li><a href="#acessibilidade-estrutura">A importancia</a></li>
+        <li><a href="#acessivel">Benefícios</a></li>
+        <li><a href="#boas-praticas">Boas Práticas</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+      </ul>
+    </section>
+    
+
+  </div>
+
+  <!-- Rodapé -->
+  <iframe src="footer.html" class="iframe-footer" title="Rodapé"></iframe>
+
+</body>
+</html>
