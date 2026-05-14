@@ -1,0 +1,309 @@
+/*Fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que bordas não aumentem o tamanho do elemento */
+}
+
+body{
+    background-color: #ffffff;
+    margin: 10px;
+    
+}
+
+.barra_topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+.pesquisar{
+    display: flex;
+    align-items: center;
+    
+}
+
+.sub_menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#user img{
+    width: 34px;
+    height: 34px;
+}
+
+/* Area do Conteudo */
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    align-items: start;
+}
+
+#titulo_video h1{
+    margin-top: 10px;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+#actions{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+    font-family: Roboto;
+    align-items: center;
+}
+
+#canal{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#canal-logo img{
+    width: 40px;
+    height: 40px;
+    
+}
+#nome-canal{
+    font-weight: bold;
+}
+
+#infor-canal{
+    font-weight: normal;
+    font-size: 80%;
+    color: rgb(133, 131, 131);
+}
+
+#like{
+    display: flex;
+    gap: 5px;
+    
+}
+
+#like img{
+    width: 24px;
+    height: 24px;
+   
+}
+#deslike{
+    display: flex;
+    gap: 5px;
+}
+
+#deslike img{
+    width: 24px;
+    height: 24px;
+}
+
+#share{
+    display: flex;
+    gap: 5px;
+}
+
+#share img{
+    width: 24px;
+    height: 24px;
+}
+
+#download{
+    display: flex;
+    gap: 5px;
+}
+
+#download img{
+    width: 24px;
+    height: 24px;
+}
+
+.txt-actions{
+    font-weight: 500;
+}
+
+#infor-video{
+    margin-top: 10px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(53, 53, 53);
+    max-width: 950px;
+    background-color:  rgb(0 0 0 / 7%);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#registro{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    
+    margin-bottom: 5px;
+}
+
+#resumo-video{
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+
+/* Config Sidelbar*/
+
+.sidelbar {
+    margin-left: 10px;
+
+}
+.sidelbar-box {
+    display: flex;
+    max-width: 500px;
+    align-items: center;
+}
+.sidelbar-img img {
+    max-width: 160px;
+    max-height: 90px;
+    border-radius: 05px;
+}
+
+.sidelbar-infor {
+    margin-left: 10px;
+    font-family: Roboto;
+}
+
+.infor-titulo {
+   font-weight: bold;
+}
+
+.infor-canal {
+    font-weight: normal;
+    font-size: 02vh;
+    color: rgb(78, 78, 78);
+    margin-top: 6px;
+}
+
+.infor-view {
+    font-weight: normal;
+    font-size: 02vh;
+    color: rgb(78, 78, 78);
+    margin-top: 6px;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 700px){
+
+    body{
+        margin: 5px;
+    }
+
+    /* TOPO */
+    .barra_topo{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    /* Ordem dos elementos */
+    .menu{
+        order: 1;
+        justify-content: center;
+    }
+
+    .sub_menu{
+        order: 2;
+        justify-content: center;
+    }
+
+    .pesquisar{
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .pesquisar img{
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    /* CONTEÚDO */
+    .conteudo{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* VIDEO */
+    #video iframe{
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    #titulo_video h1{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* AÇÕES */
+    #actions{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #infor-video{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    #resumo-video{
+        line-height: 24px;
+    }
+
+    /* SIDELBAR */
+    .sidelbar{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sidelbar-box{
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .sidelbar-img img{
+        width: 140px;
+        height: auto;
+    }
+
+    .sidelbar-infor{
+        width: 100%;
+    }
+
+    .infor-titulo{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .infor-canal,
+    .infor-view{
+        font-size: 12px;
+    }
+}
+
