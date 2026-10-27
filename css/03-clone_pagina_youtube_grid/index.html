@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página inicial inspirada no YouTube, construída com CSS Grid Layout.">
+  <title>YouTube - Grid Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-layout">
+    <header class="topbar">
+      <div class="brand-area">
+        <button class="icon-button menu-button" aria-label="Abrir menu" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <a class="youtube-brand" href="#" aria-label="YouTube início">
+          <svg class="youtube-logo" viewBox="0 0 40 28" aria-hidden="true">
+            <rect x="1" y="3" width="38" height="22" rx="6" fill="#ff0033"/>
+            <path d="M17 8.5 27 14 17 19.5Z" fill="#fff"/>
+          </svg>
+          <span>YouTube</span>
+        </a>
+      </div>
+
+      <form class="search" role="search" onsubmit="event.preventDefault()">
+        <label class="visually-hidden" for="search-input">Pesquisar</label>
+        <input id="search-input" type="search" aria-label="Pesquisar">
+        <button class="search-button" aria-label="Pesquisar" type="submit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7.2"/><path d="m16.2 16.2 5 5"/></svg>
+        </button>
+      </form>
+
+      <div class="top-actions">
+        <button class="icon-button" aria-label="Criar vídeo" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="m16 10 6-4v12l-6-4"/></svg>
+        </button>
+        <button class="icon-button" aria-label="Notificações" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg>
+        </button>
+        <button class="avatar-button" aria-label="Perfil do usuário" type="button">
+          <img src="img/avatar-perfil.jpg" alt="">
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar" aria-label="Menu principal">
+      <nav>
+        <a class="nav-item active" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg><span>Início</span></a>
+        <a class="nav-item" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.8 8.2-2.2 5.4-5.4 2.2 2.2-5.4Z"/></svg><span>Explorar</span></a>
+        <a class="nav-item" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg><span>Inscrições</span></a>
+        <a class="nav-item" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg><span>YouTube Music</span></a>
+        <a class="nav-item" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V5a2 2 0 0 1 4 0v5l4-1a2 2 0 0 1 2 3l-2 7a2 2 0 0 1-2 1H7a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3ZM2 11h3v9H2z"/></svg><span>Vídeos que gostei</span></a>
+        <a class="nav-item" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><span>Assistir mais tarde</span></a>
+        <a class="nav-item" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg><span>Downloads</span></a>
+        <a class="nav-item" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg><span>Filmes</span></a>
+        <a class="nav-item" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></svg><span>Aprender</span></a>
+        <a class="nav-item" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M8 13 7 22l5-3 5 3-1-9"/></svg><span>Esportes</span></a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section class="video-grid" aria-label="Vídeos recomendados">
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-dados.jpg" alt="Tecnologia e ciência de dados">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal.jpg" alt=""><div><h2>Geração Tech Unimed - BH - Ciência de Dados</h2><p>2,1 mil visualizações<br>Transmitido há 2 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-scrum.jpg" alt="Equipe trabalhando em Scrum">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal.jpg" alt=""><div><h2>Scrum Talks</h2><p>1,6 mil visualizações<br>Transmitido há 3 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-machine-learning.jpg" alt="Gráficos de análise de dados">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal-2.jpg" alt=""><div><h2>Machine Learning Avançado - Fast Track</h2><p>1,7 mil visualizações<br>Transmitido há 4 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-project-planning.jpg" alt="Planejamento de projeto em equipe">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal.jpg" alt=""><div><h2>Global Skills #2 - Project Planning</h2><p>2,1 mil visualizações<br>Transmitido há 2 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-python.jpg" alt="Programação em Python">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal.jpg" alt=""><div><h2>Como aprender a programar Python do ZERO</h2><p>711 visualizações<br>Transmitido há 2 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-dados.jpg" alt="Tecnologia e ciência de dados">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal.jpg" alt=""><div><h2>Geração Tech Unimed - BH - Ciência de Dados</h2><p>2,1 mil visualizações<br>Transmitido há 2 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-scrum.jpg" alt="Equipe trabalhando em Scrum">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal.jpg" alt=""><div><h2>Scrum Talks</h2><p>1,6 mil visualizações<br>Transmitido há 3 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-machine-learning.jpg" alt="Gráficos de análise de dados">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal-2.jpg" alt=""><div><h2>Machine Learning Avançado - Fast Track</h2><p>1,7 mil visualizações<br>Transmitido há 4 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-scrum.jpg" alt="Equipe trabalhando em Scrum">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal.jpg" alt=""><div><h2>Scrum Talks</h2><p>1,6 mil visualizações<br>Transmitido há 3 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-machine-learning.jpg" alt="Gráficos de análise de dados">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal-2.jpg" alt=""><div><h2>Machine Learning Avançado - Fast Track</h2><p>1,7 mil visualizações<br>Transmitido há 4 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-project-planning.jpg" alt="Planejamento de projeto em equipe">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal.jpg" alt=""><div><h2>Global Skills #2 - Project Planning</h2><p>2,1 mil visualizações<br>Transmitido há 2 dias</p></div></div>
+        </article>
+        <article class="video-card">
+          <img class="thumbnail" src="img/video-python.jpg" alt="Programação em Python">
+          <div class="video-info"><img class="channel-avatar" src="img/avatar-canal.jpg" alt=""><div><h2>Como aprender a programar Python do ZERO</h2><p>711 visualizações<br>Transmitido há 2 dias</p></div></div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
