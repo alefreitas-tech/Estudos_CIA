@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Uma página demonstrativa inspirada na experiência visual do Discord, feita com HTML semântico e CSS responsivo.">
+  <meta name="theme-color" content="#5865f2">
+  <title>Discord — Seu lugar para conversar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container cabecalho__linha">
+      <a class="marca" href="#inicio" aria-label="Discord — página inicial"><img src="imagens/logo-discord.png" alt="Discord" width="155" height="45"></a>
+      <nav class="navegacao" aria-label="Navegação principal">
+        <ul><li><a href="#recursos">Recursos</a></li><li><a href="#comunidades">Comunidades</a></li><li><a href="#conexao">Conexão</a></li></ul>
+      </nav>
+      <a class="botao botao--branco botao--cabecalho" href="#comece">Abrir Discord</a>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <p class="sobretitulo">Converse, jogue e compartilhe</p>
+          <h1 id="titulo-principal">Seu lugar para conversar</h1>
+          <p class="hero__descricao">Um espaço para se conectar com amigos, participar de comunidades e compartilhar momentos, seja jogando, estudando ou simplesmente conversando.</p>
+          <div class="hero__acoes"><a class="botao botao--branco" href="#recursos"><span aria-hidden="true">↓</span> Conheça o Discord</a><a class="botao botao--escuro" href="#comece">Comece agora</a></div>
+        </div>
+        <figure class="hero__arte"><img src="imagens/hero-mobile.png" alt="Ilustração de pessoas em uma comunidade digital com conversas e canais" width="720" height="520"></figure>
+      </div>
+      <div class="hero__onda" aria-hidden="true"></div>
+    </section>
+    <section class="secao" id="recursos" aria-labelledby="titulo-recursos">
+      <div class="container secao__grade">
+        <figure class="secao__arte"><img src="imagens/destaque-01.png" alt="Ilustração de uma interface com canais e participantes" width="600" height="400" loading="lazy"></figure>
+        <div class="secao__texto"><p class="etiqueta">Comunidades</p><h2 id="titulo-recursos">Um espaço para cada grupo</h2><p>Reúna seus amigos e encontre comunidades que compartilham os mesmos interesses. Organize conversas e participe de espaços criados para diferentes assuntos.</p></div>
+      </div>
+    </section>
+    <section class="secao secao--suave" id="comunidades" aria-labelledby="titulo-comunidades">
+      <div class="container secao__grade secao__grade--invertida">
+        <figure class="secao__arte"><img src="imagens/destaque-02.png" alt="Ilustração de mensagens em uma interface de conversa" width="600" height="400" loading="lazy"></figure>
+        <div class="secao__texto"><p class="etiqueta">Conversas</p><h2 id="titulo-comunidades">Suas conversas em um só lugar</h2><p>Compartilhe mensagens, imagens e ideias. Encontre seus amigos e acompanhe as conversas dos grupos dos quais você participa.</p></div>
+      </div>
+    </section>
+    <section class="secao" id="conexao" aria-labelledby="titulo-conexao">
+      <div class="container secao__grade">
+        <figure class="secao__arte"><img src="imagens/destaque-03.png" alt="Ilustração de quatro pessoas em uma chamada de vídeo" width="600" height="400" loading="lazy"></figure>
+        <div class="secao__texto"><p class="etiqueta">Conexão</p><h2 id="titulo-conexao">Mais perto, mesmo à distância</h2><p>Converse por voz ou vídeo, compartilhe experiências e aproveite momentos com seus amigos, mesmo quando cada pessoa estiver em um lugar diferente.</p></div>
+      </div>
+    </section>
+    <section class="convite" id="comece" aria-labelledby="titulo-convite">
+      <div class="container convite__conteudo"><img class="convite__arte" src="imagens/destaque-04.png" alt="" width="600" height="400" loading="lazy"><p class="sobretitulo">Vamos nessa?</p><h2 id="titulo-convite">Sua próxima conversa começa aqui</h2><p>Conheça novas comunidades e encontre seu espaço.</p><a class="botao botao--branco" href="https://discord.com/" target="_blank" rel="noopener noreferrer">Visitar o Discord oficial <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div class="rodape__marca"><a href="#inicio" aria-label="Voltar ao início"><img src="imagens/logo-discord.png" alt="Discord" width="155" height="45" loading="lazy"></a><p>Um lugar para conversar e compartilhar.</p></div>
+      <nav class="rodape__nav" aria-label="Navegação do rodapé"><h2>Explore</h2><ul><li><a href="#inicio">Início</a></li><li><a href="#recursos">Recursos</a></li><li><a href="#comunidades">Comunidades</a></li><li><a href="#conexao">Conexão</a></li></ul></nav>
+      <p class="rodape__aviso">Projeto educacional independente, desenvolvido com HTML5 e CSS3. Não é uma página oficial do Discord.</p>
+      <div class="rodape__base"><span>© Projeto demonstrativo | <a href="https://www.instagram.com/alefreitas.tech/">Alexandre Freitas</a> </span><a href="#inicio">Voltar ao topo ↑</a></div>
+    </div>
+  </footer>
+</body>
+</html>
